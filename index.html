@@ -1,31 +1,56 @@
-<!-- #1: Mi página de aterrizaje de producto debería tener un elemento header con un respectivo id="header". -->
-
-<!-- #2: Puedo ver una imagen dentro del elemento header con un respectivo id="header-img". El logotipo de una empresa sería una buena opción de imagen aquí. -->
-
-<!-- #3: Dentro del elemento #header puedo ver un elemento nav con un respectivo id="nav-bar". -->
-
-<!-- #4: Puedo ver al menos tres elementos en los que se puede hacer click dentro del elemento nav, cada uno con la clase nav-link. -->
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Landing Product</title>
+    </head>
+    <!-- #1: Mi página de aterrizaje de producto debería tener un elemento header con un respectivo id="header". -->
+    <!-- #2: Puedo ver una imagen dentro del elemento header con un respectivo id="header-img". El logotipo de una empresa sería una buena opción de imagen aquí. -->
+    <!-- #3: Dentro del elemento #header puedo ver un elemento nav con un respectivo id="nav-bar". -->
+    <header id="header">
+        <img id="img-header" src="#" alt="Logo de la empresa"/>
+        <!-- #4: Puedo ver al menos tres elementos en los que se puede hacer click dentro del elemento nav, cada uno con la clase nav-link. -->
 <!-- #5: Cuando hago clic en un botón .nav-link en el elemento nav, soy llevado a la sección correspondiente de la página de aterrizaje. -->
-
+        <nav id="nav-bar">
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </nav>
+    </header>
+    <body>
 <!-- #6: Puedo ver un video de producto incrustado con id="video". -->
-
-<!-- Historia de usuario #8: Mi página de aterrizaje tiene un elemento form con un respectivo id="form". -->
-
+        <iframe id="video" src="#" frameborder="0"></iframe>
+<!-- #7: Mi página de aterrizaje tiene un elemento form con un respectivo id="form". -->
+        <form method="get" accept-charset="utf-8">
 <!-- #8: Dentro del formulario, hay un campo de entrada input con id="email" donde puedo introducir una dirección de correo electrónico. -->
-
 <!-- #9: El campo de entrada #email debe tener un texto provisional para que el usuario sepa para qué sirve el campo. -->
-
 <!-- #10: El campo de entrada #email utiliza la validación de HTML5 para confirmar que el texto introducido es una dirección de correo electrónico. -->
-
+            <label for=email>Email:</label>
+            <input id="email" type="email" value="username@domain" name="email" required/>
 <!-- #11: Dentro del formulario, hay un input de envío con un respectivo id="submit". -->
-
 <!-- #12: Cuando hago clic en el elemento #submit, el correo electrónico se envía a una página estática (utiliza esta URL de pruebas: https://www. reecodecamp.com/email-submit). -->
-
+            <input id="submit" type="submit" formaction="https://www.freecodecamp.com/email-submit"/>
+        </form>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
 <!-- #13: La barra de navegación debe estar siempre en la parte superior del viewport. -->
-
 <!-- #14: Mi página de aterrizaje de producto debería tener al menos una media query. -->
-
 <!-- #15: Mi página de aterrizaje de producto debería utilizar CSS flexbox al menos una vez. -->
 
+
+
+
+
+
+
+
+
 <!-- Puedes construir tu proyecto usando esta plantilla CodePen y haciendo clic en Save para crear tu propio pen. O puedes utilizar este enlace CDN para ejecutar los tests en cualquier entorno que desees: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js -->
+
+
+
+
