@@ -10,9 +10,10 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
 ProductLandingPage	README.md	/^# ProductLandingPage$/;"	c
-email	index.html	/^            <input id="email" type="email" value="username@domain" name="email" required\/>$/;"	I
+email	index.html	/^            <input id="email" type="email" placeholder="username@domain" name="email" required\//;"	I
+form	index.html	/^        <form id="form" action="https:\/\/www.freecodecamp.com\/email-submit" method="get" accep/;"	I
 header	index.html	/^    <header id="header">$/;"	I
-img-header	index.html	/^        <img id="img-header" src="#" alt="Logo de la empresa"\/>$/;"	I
+header-img	index.html	/^        <img id="header-img" src="https:\/\/image.flaticon.com\/icons\/png\/512\/58\/58589.png" /;"	I
 nav-bar	index.html	/^        <nav id="nav-bar">$/;"	I
-submit	index.html	/^            <input id="submit" type="submit" formaction="https:\/\/www.freecodecamp.com\/email-s/;"	I
+submit	index.html	/^                <input id="submit" type="submit"\/>$/;"	I
 video	index.html	/^        <iframe id="video" src="#" frameborder="0"><\/iframe>$/;"	I

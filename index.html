@@ -9,30 +9,32 @@
     <!-- #2: Puedo ver una imagen dentro del elemento header con un respectivo id="header-img". El logotipo de una empresa sería una buena opción de imagen aquí. -->
     <!-- #3: Dentro del elemento #header puedo ver un elemento nav con un respectivo id="nav-bar". -->
     <header id="header">
-        <img id="img-header" src="#" alt="Logo de la empresa"/>
+        <img id="header-img" src="https://image.flaticon.com/icons/png/512/58/58589.png" alt="Logo de la empresa"/>
         <!-- #4: Puedo ver al menos tres elementos en los que se puede hacer click dentro del elemento nav, cada uno con la clase nav-link. -->
-<!-- #5: Cuando hago clic en un botón .nav-link en el elemento nav, soy llevado a la sección correspondiente de la página de aterrizaje. -->
+        <!-- #5: Cuando hago clic en un botón .nav-link en el elemento nav, soy llevado a la sección correspondiente de la página de aterrizaje. -->
         <nav id="nav-bar">
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
+                <a class="nav-link" href="#video"><li>Video</li></a>
+                <a class="nav-link" href="#form"><li>Form</li></a>
+                <a class="nav-link" href="#email"><li>Email</li></a>
             </ol>
         </nav>
     </header>
     <body>
-<!-- #6: Puedo ver un video de producto incrustado con id="video". -->
+        <!-- #6: Puedo ver un video de producto incrustado con id="video". -->
         <iframe id="video" src="#" frameborder="0"></iframe>
-<!-- #7: Mi página de aterrizaje tiene un elemento form con un respectivo id="form". -->
-        <form method="get" accept-charset="utf-8">
-<!-- #8: Dentro del formulario, hay un campo de entrada input con id="email" donde puedo introducir una dirección de correo electrónico. -->
-<!-- #9: El campo de entrada #email debe tener un texto provisional para que el usuario sepa para qué sirve el campo. -->
-<!-- #10: El campo de entrada #email utiliza la validación de HTML5 para confirmar que el texto introducido es una dirección de correo electrónico. -->
+        <!-- #7: Mi página de aterrizaje tiene un elemento form con un respectivo id="form". -->
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="get" accept-charset="utf-8">
+            <!-- #8: Dentro del formulario, hay un campo de entrada input con id="email" donde puedo introducir una dirección de correo electrónico. -->
+            <!-- #9: El campo de entrada #email debe tener un texto provisional para que el usuario sepa para qué sirve el campo. -->
+            <!-- #10: El campo de entrada #email utiliza la validación de HTML5 para confirmar que el texto introducido es una dirección de correo electrónico. -->
             <label for=email>Email:</label>
-            <input id="email" type="email" value="username@domain" name="email" required/>
-<!-- #11: Dentro del formulario, hay un input de envío con un respectivo id="submit". -->
-<!-- #12: Cuando hago clic en el elemento #submit, el correo electrónico se envía a una página estática (utiliza esta URL de pruebas: https://www. reecodecamp.com/email-submit). -->
-            <input id="submit" type="submit" formaction="https://www.freecodecamp.com/email-submit"/>
+            <input id="email" type="email" placeholder="username@domain" name="email" required/>
+            <!-- #11: Dentro del formulario, hay un input de envío con un respectivo id="submit". -->
+            <!-- #12: Cuando hago clic en el elemento #submit, el correo electrónico se
+                envía a una página estática (utiliza esta URL de pruebas: https://www.
+                reecodecamp.com/email-submit). SEE FORM-->
+                <input id="submit" type="submit"/>
         </form>
     </body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
