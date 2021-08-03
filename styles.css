@@ -2,6 +2,7 @@
 html{
     background-color: #262626;
     color: #EEEEEE;
+    background-image: url(imgs/snowflake-pattern.png);
 }
 /*  #13: La barra de navegación debe estar siempre en la parte superior del viewport.  */
 header{
@@ -15,8 +16,8 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #EEEEEE;
-    margin: 0vh 5vh 10vh 5vh;
+    border: 3px solid #303030;
+    margin: 0vh 7vh 10vh 7vh;
 }
 header  #header-img{
     height: 50px;
@@ -59,9 +60,11 @@ body #mision{
 body #video{
     grid-area: video;
     justify-self: center;
+    border: 3px solid #303030;
 }
 body #tennis-timeline{
     grid-area: tennis-timeline;
+    border: 3px solid #303030;
 }
 body #container-form{
     grid-area: form;
