@@ -9,21 +9,55 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
-#video	styles.css	/^#video{$/;"	i
+#checkbox	styles.css	/^form #radio, #checkbox{$/;"	i
+#comentarios	styles.css	/^form #text, #comentarios, #estudios{$/;"	i
+#comentarios	styles.css	/^form #text, #estudios, #genero, #deportes, #comentarios{$/;"	i
+#deportes	styles.css	/^form #text, #estudios, #genero, #deportes, #comentarios{$/;"	i
+#estudios	styles.css	/^form #text, #comentarios, #estudios{$/;"	i
+#estudios	styles.css	/^form #text, #estudios, #genero, #deportes, #comentarios{$/;"	i
+#genero	styles.css	/^form #text, #estudios, #genero, #deportes, #comentarios{$/;"	i
 ProductLandingPage	README.md	/^# ProductLandingPage$/;"	c
+body #container-form	styles.css	/^body #container-form{$/;"	i
+body #container-mision	styles.css	/^body #container-mision{$/;"	i
 body #mision	styles.css	/^body #mision{$/;"	i
-body > #container	styles.css	/^body > #container{$/;"	i
-container	index.html	/^        <div id="container">$/;"	I
+body #tennis-timeline	styles.css	/^body #tennis-timeline{$/;"	i
+body #video	styles.css	/^body #video{$/;"	i
+body form	styles.css	/^body form{$/;"	s
+button	styles.css	/^button{$/;"	s
+checkbox	index.html	/^                    <div id="checkbox">$/;"	I
+comentarios	index.html	/^                    <div id="comentarios">$/;"	I
+container-form	index.html	/^        <div id="container-form">$/;"	I
+container-mision	index.html	/^        <div id="container-mision">$/;"	I
+deportes	index.html	/^                <div id="deportes">$/;"	I
+dropdown	index.html	/^                    <label id="dropdown">Nivel de estudios<\/label>$/;"	I
+dropdown	index.html	/^                    <select name="estudios" id="dropdown">$/;"	I
+e	index.html	/^                    <input type="email" placeholder="Email" name="email" id="e" required\/>$/;"	I
 email	index.html	/^                <input id="email" type="email" placeholder="username@domain" name="email" requir/;"	I
+email-label	index.html	/^                    <label id="email-label" for="email">Email:<\/label>$/;"	I
+estudios	index.html	/^                <div id="estudios">$/;"	I
 form	index.html	/^            <form id="form" action="https:\/\/www.freecodecamp.com\/email-submit" method="get" a/;"	I
-form	styles.css	/^form{$/;"	s
+form #radio	styles.css	/^form #radio, #checkbox{$/;"	i
+form #text	styles.css	/^form #text, #comentarios, #estudios{$/;"	i
+form #text	styles.css	/^form #text, #estudios, #genero, #deportes, #comentarios{$/;"	i
+genero	index.html	/^                <div id="genero">$/;"	I
 header	index.html	/^    <header id="header">$/;"	I
 header	styles.css	/^header{$/;"	s
+header #header-img	styles.css	/^header  #header-img{$/;"	i
 header .nav-link	styles.css	/^header .nav-link{$/;"	c
-header > #header-img	styles.css	/^header > #header-img{$/;"	i
 header-img	index.html	/^        <img id="header-img" src="https:\/\/image.flaticon.com\/icons\/png\/512\/2357\/2357334.p/;"	I
 html	styles.css	/^html{$/;"	s
+input	styles.css	/^textarea, input{$/;"	s
 mision	index.html	/^            <em id="mision">$/;"	I
+name	index.html	/^                    <input type="text" placeholder="Nombre" name="name" id="name" required\/>$/;"	I
+name-label	index.html	/^                    <label id="name-label" for="nombre">Nombre:<\/label>$/;"	I
 nav-bar	index.html	/^        <nav id="nav-bar">$/;"	I
+number	index.html	/^                    <input type="number" placeholder="#" min="0" max="140" name="number" id="num/;"	I
+number-label	index.html	/^                    <label id="number-label" for="numero">Edad:<\/label>$/;"	I
+radio	index.html	/^                    <div id="radio">$/;"	I
+s	index.html	/^                        <button id="s" type="submit">Submit<\/button>$/;"	I
+select	styles.css	/^select{$/;"	s
 submit	index.html	/^                    <input id="submit" type="submit"\/>$/;"	I
+tennis-timeline	index.html	/^            <div id="tennis-timeline">$/;"	I
+text	index.html	/^                <div id="text">$/;"	I
+textarea	styles.css	/^textarea, input{$/;"	s
 video	index.html	/^            <iframe id="video" width="560" height="315" src="https:\/\/www.youtube.com\/embed\/V/;"	I

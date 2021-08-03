@@ -1,24 +1,24 @@
 /* archivo de estilos */
 html{
-    background-color: #FFEEEE;
-    color: #262626;
+    background-color: #262626;
+    color: #EEEEEE;
 }
 /*  #13: La barra de navegación debe estar siempre en la parte superior del viewport.  */
 header{
     display: flex;
     flex-direction: row;
     height: 70px;
-    background-color: #EEEEEE;
+    background-color: #262626;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #262626;
+    border-bottom: 1px solid #EEEEEE;
     margin: 0vh 5vh 10vh 5vh;
 }
-header > #header-img{
+header  #header-img{
     height: 50px;
     width: auto;
     position: absolute;
@@ -27,30 +27,89 @@ header > #header-img{
 header .nav-link{
     margin: 0px 2vw;
     margin: 0px 2vw;
-    color: #262626;
+    color: #EEEEEE;
     text-decoration: none;
 }
-body > #container{
+body #container-mision{
     margin-top: 30px;
     display: grid;
     grid-template-areas:
-    "a mision b"
-    "c video d"
+    "a mision tennis-timeline"
+    "a video tennis-timeline"
     "form form form";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-gap: 10vh;
+    grid-gap: 5vw;
 }
 body #mision{
     grid-area: mision;
     text-align: center;
+    /* margin: 0vh 5vw; */
 }
-#video{
+body #video{
     grid-area: video;
+    justify-self: center;
 }
-form{
+body #tennis-timeline{
+    grid-area: tennis-timeline;
+}
+body #container-form{
+    grid-template-areas: 
+    "form";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+body #container-form{
     grid-area: form;
     justify-self: center;
+}
+body form{
+    display: flex;
+    flex-direction: column;
+}
+body form{
+    color: #EEEEEE;
+    background: hsla(0, 15%, 15%, 0.5);
+    border-radius: 5px;
+    margin: 3vh 25vw;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-content: center;
+} 
+form #text, #estudios, #genero, #deportes, #comentarios{
+    margin: 10px;
+}
+form #text, #comentarios, #estudios{
+    display: flex;
+    flex-direction: column;
+}
+form #radio, #checkbox{
+    display: flex;
+    flex-direction: row;
+}
+textarea, input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 3.5vh;
+    background-color: hsla(0,20%,20%,0.5);
+    border: black;
+    color: #CCCCCC;
+}
+select{
+    background-color: hsla(0,20%,20%,0.5);
+    color: #CCCCCC;
+    border: black;
+}
+button{
+    background-color: seagreen;
+    color: white;
+    border: palegreen;
+    border-radius: 5px;
+    height: 8vh;
+    font-size: 2vw;
 }
 /*  #14: Mi página de aterrizaje de producto debería tener al menos una media query.  */
 /*  #15: Mi página de aterrizaje de producto debería utilizar CSS flexbox al menos una vez.  */

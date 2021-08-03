@@ -20,7 +20,7 @@
         </nav>
     </header>
     <body>
-        <div id="container">
+        <div id="container-mision">
             <em id="mision">
                 El tenis, un deporte emocionante, lleno de clase y técnica. Potenciar el
                 juego es muestra de excelencia, potenciarlo al máximo es lo que ofrecemos
@@ -28,17 +28,71 @@
             </em>
             <!-- #6: Puedo ver un video de producto incrustado con id="video". -->
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/VjzvwyM4CQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="tennis-timeline">
+                <a href="https://twitter.com/intent/tweet?button_hashtag=tennis&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #tennis</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-lang="es" data-height="500" data-theme="dark" href="https://twitter.com/Tennis?ref_src=twsrc%5Etfw">Tweets by Tennis</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div
+        </div>
+        <div id="container-form">
             <!-- #7: Mi página de aterrizaje tiene un elemento form con un respectivo id="form". -->
             <form id="form" action="https://www.freecodecamp.com/email-submit" method="get" accept-charset="utf-8">
                 <!-- #8: Dentro del formulario, hay un campo de entrada input con id="email" donde puedo introducir una dirección de correo electrónico. -->
                 <!-- #9: El campo de entrada #email debe tener un texto provisional para que el usuario sepa para qué sirve el campo. -->
                 <!-- #10: El campo de entrada #email utiliza la validación de HTML5 para confirmar que el texto introducido es una dirección de correo electrónico. -->
+                <div id="text">
+                    <label id="name-label" for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre" name="name" id="name" required/>
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="email" placeholder="Email" name="email" id="e" required/>
+                    <label id="number-label" for="numero">Edad:</label>
+                    <input type="number" placeholder="#" min="0" max="140" name="number" id="number" value="0"/>
+                </div>
+                <!-- Selección de datos en forma de cascada dorpdown -->
+                <div id="estudios">
+                    <label id="dropdown">Nivel de estudios</label>
+                    <select name="estudios" id="dropdown">
+                        <option value="Primaria">Primaria</option>
+                        <option value="Secundaria">Secundaria</option>
+                        <option value="Preparatoria">Preparatoria</option>
+                        <option value="Universidad">Universidad</option>
+                        <option value="Posgrado">Posgrado</option>
+                    </select>
+                </div>
+                <!-- Botones de radio correspondiente a la selección de género -->
+                <div id="genero">
+                    <label>Género</label>
+                    <div id="radio">
+                        <label for="name">Masculino</label>
+                        <input style="align-self:center" type="radio" value="Masculino" name="name"/>
+                        <label for="name">Femenino</label>
+                        <input style="align-self:center" type="radio" value="Femenino" name="name"/>
+                    </div>
+                </div>
+                <!-- Botones tipo checkbox, para seleccionar gustos o aficiones -->
+                <div id="deportes">
+                    <label>Deportes favoritos</label>
+                    <div id="checkbox">
+                        <label for="deportes">Fútbol</label>
+                        <input style="align-self:center" type="checkbox" value="Fútbol" name="deportes"/>
+                        <label for="deportes">Basquétbol</label>
+                        <input style="align-self:center" type="checkbox" value="Basquétbol" name="deportes"/>
+                        <label for="deportes">Box</label>
+                        <input style="align-self:center" type="checkbox" value="Box" name="deportes"/>
+                    </div>
+                </div>
                 <label for=email>Email:</label>
                 <input id="email" type="email" placeholder="username@domain" name="email" required/>
                 <!-- #11: Dentro del formulario, hay un input de envío con un respectivo id="submit". -->
                 <!-- #12: Cuando hago clic en el elemento #submit, el correo electrónico se
                     envía a una página estática (utiliza esta URL de pruebas: https://www.
                     reecodecamp.com/email-submit). SEE FORM-->
+
+                    <!-- area de texta comentarios -->
+                    <div id="comentarios">
+                        <label for="comentarios">Comentarios adicionales</label>
+                        <textarea name="comentarios" placeholder="Comentarios"></textarea>
+                        <button id="s" type="submit">Submit</button>
+                    </div>
                     <input id="submit" type="submit"/>
             </form>
         </div>
