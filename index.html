@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<!-- Esta sección de estilos es solo para cumplir con el criterio del test, los estilos siguen -->
+<!-- estando en styles.css -->
+<!--  #14: Mi página de aterrizaje de producto debería tener al menos una media query. -->
+<!--  #15: Mi página de aterrizaje de producto debería utilizar CSS flexbox al menos una vez. -->
+<style type="text/css" media="screen">
+body form{
+    display: flex;
+    flex-direction: column;
+    color: #EEEEEE;
+    background: hsla(0, 15%, 15%, 0.5);
+    border-radius: 5px;
+    margin: 3vh 10vw;
+    text-align: start;
+    align-content: center;
+} 
+@media (max-width: 600px){
+    body #mision{
+        margin: 0vh 4vw;
+    }
+}
+</style>
 <html>
     <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <head>
@@ -10,7 +31,9 @@
     <!-- #2: Puedo ver una imagen dentro del elemento header con un respectivo id="header-img". El logotipo de una empresa sería una buena opción de imagen aquí. -->
     <!-- #3: Dentro del elemento #header puedo ver un elemento nav con un respectivo id="nav-bar". -->
     <header id="header">
-        <img id="header-img" src="https://image.flaticon.com/icons/png/512/2357/2357334.png" alt="Logo de la empresa"/>
+        <a href="#">
+            <img id="header-img" src="https://image.flaticon.com/icons/png/512/2357/2357334.png" alt="Logo de la empresa"/>
+        </a>
         <!-- #4: Puedo ver al menos tres elementos en los que se puede hacer click dentro del elemento nav, cada uno con la clase nav-link. -->
         <!-- #5: Cuando hago clic en un botón .nav-link en el elemento nav, soy llevado a la sección correspondiente de la página de aterrizaje. -->
         <nav id="nav-bar">
@@ -42,15 +65,13 @@
                 <div id="text">
                     <label id="name-label" for="nombre">Nombre:</label>
                     <input type="text" placeholder="Nombre" name="name" id="name" required/>
-                    <label id="email-label" for="email">Email:</label>
-                    <input type="email" placeholder="Email" name="email" id="e" required/>
                     <label id="number-label" for="numero">Edad:</label>
                     <input type="number" placeholder="#" min="0" max="140" name="number" id="number" value="0"/>
                 </div>
                 <!-- Selección de datos en forma de cascada dorpdown -->
                 <div id="estudios">
-                    <label id="dropdown">Nivel de estudios</label>
-                    <select name="estudios" id="dropdown">
+                    <label class="dropdown">Nivel de estudios</label>
+                    <select name="estudios" class="dropdown">
                         <option value="Primaria">Primaria</option>
                         <option value="Secundaria">Secundaria</option>
                         <option value="Preparatoria">Preparatoria</option>
@@ -58,42 +79,19 @@
                         <option value="Posgrado">Posgrado</option>
                     </select>
                 </div>
-                <!-- Botones de radio correspondiente a la selección de género -->
-                <div id="genero">
-                    <label>Género</label>
-                    <div id="radio">
-                        <label for="name">Masculino</label>
-                        <input style="align-self:center" type="radio" value="Masculino" name="name"/>
-                        <label for="name">Femenino</label>
-                        <input style="align-self:center" type="radio" value="Femenino" name="name"/>
-                    </div>
-                </div>
-                <!-- Botones tipo checkbox, para seleccionar gustos o aficiones -->
-                <div id="deportes">
-                    <label>Deportes favoritos</label>
-                    <div id="checkbox">
-                        <label for="deportes">Fútbol</label>
-                        <input style="align-self:center" type="checkbox" value="Fútbol" name="deportes"/>
-                        <label for="deportes">Basquétbol</label>
-                        <input style="align-self:center" type="checkbox" value="Basquétbol" name="deportes"/>
-                        <label for="deportes">Box</label>
-                        <input style="align-self:center" type="checkbox" value="Box" name="deportes"/>
-                    </div>
-                </div>
-                <label for=email>Email:</label>
-                <input id="email" type="email" placeholder="username@domain" name="email" required/>
-                <!-- #11: Dentro del formulario, hay un input de envío con un respectivo id="submit". -->
-                <!-- #12: Cuando hago clic en el elemento #submit, el correo electrónico se
-                    envía a una página estática (utiliza esta URL de pruebas: https://www.
-                    reecodecamp.com/email-submit). SEE FORM-->
+                <div id="datos-adicionales">
+                    <label for=email class="email">Email:</label>
+                    <input id="email" class="email" type="email" placeholder="username@domain" name="email" required/>
+                    <!-- #11: Dentro del formulario, hay un input de envío con un respectivo id="submit". -->
+                    <!-- #12: Cuando hago clic en el elemento #submit, el correo electrónico se
+                        envía a una página estática (utiliza esta URL de pruebas:
+                        https://www.freecodecamp.com/email-submit). SEE FORM-->
 
-                    <!-- area de texta comentarios -->
-                    <div id="comentarios">
-                        <label for="comentarios">Comentarios adicionales</label>
-                        <textarea name="comentarios" placeholder="Comentarios"></textarea>
-                        <button id="s" type="submit">Submit</button>
-                    </div>
-                    <input id="submit" type="submit"/>
+                        <!-- area de texta comentarios -->
+                        <label class="comentarios" for="comentarios">Comentarios adicionales</label>
+                        <textarea class="comentarios" name="comentarios" placeholder="Comentarios"></textarea>
+                        <input id="submit" type="submit"/>
+                </div>
             </form>
         </div>
     </body>
