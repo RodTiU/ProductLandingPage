@@ -1,24 +1,26 @@
 /* archivo de estilos */
 html{
-    background-color: #262626;
-    color: #EEEEEE;
-    background-image: url(imgs/snowflake-pattern.png);
-    background-size: 100px;
+    background-color: #EEEEEE;
+    color: #262626;
+    font-family: 'Lato', sans-serif;
+    /* background-image: url(imgs/snowflake-pattern.png); */
+    /* background-size: 256px; */
 }
 /*  #13: La barra de navegación debe estar siempre en la parte superior del viewport.  */
 header{
     display: flex;
     flex-direction: row;
     height: 70px;
-    background-color: #262626;
+    background-color: #EEEEEE;
+    opacity: 1.0;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border: 3px solid #303030;
-    margin: 0vh 7vh 10vh 7vh;
+    z-index: 99;
+    margin: -10px;
 }
 header  #header-img{
     height: 50px;
@@ -26,13 +28,20 @@ header  #header-img{
     position: absolute;
     left: 50px;
 }
+header #nav-bar{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 150px;
+    font-weight: bolder;
+}
 header .nav-link{
-    color: #EEEEEE;
+    color: #262626;
     text-decoration: none;
-    padding: 15px;
+    padding: 0px 15px;
 }
 header .nav-link:hover{
-    background-color: #303030;
+    background-color: #CCCCCC;
 }
 body #container-mision{
     margin-top: 30px;
@@ -63,7 +72,6 @@ body #mision{
 body #video{
     grid-area: video;
     justify-self: center;
-    border: 3px solid #303030;
 }
 body #tennis-timeline{
     grid-area: tennis-timeline;
@@ -81,13 +89,14 @@ body .central-section{
     justify-content: center;
 }
 body .imgs-central{
-    filter: invert(100%);
+    filter: invert(20%);
     height: 60px;
     align-self: center;
     margin: 20px;
 }
 body #container-form{
     grid-area: form;
+    margin: 0vh 15vw;
 }
 /* body form{ */
 /*     display: flex; */
@@ -99,27 +108,30 @@ body #container-form{
 /*     text-align: start; */
 /*     align-content: center; */
 /* } */ 
-form #text, #estudios, #comentarios, #datos-adicionales{
+form #text, #sexo, #datos-adicionales{
     display: flex;
     flex-direction: column;
     margin: 10px;
+}
+form .sexo, .comentarios{
+    border: 2px solid #CCCCCC;
 }
 form textarea, input{
     border-radius: 5px;
     margin-bottom: 10px;
     height: 3.5vh;
-    background-color: hsla(0,20%,20%,0.5);
-    border: black;
-    color: #CCCCCC;
+    background-color: hsla(0,20%,95%,0.5);
+    color: #262626;
 }
 form select{
-    background-color: hsla(0,20%,20%,0.5);
-    color: #CCCCCC;
-    border: 2px solid #262626;
+    background-color: hsla(0,20%,95%,0.5);
+    color: #262626;
+    /* border: 2px solid #262626; */
 }
 form #submit{
     height: 50px;
     width: auto;
     border: 2px solid green;
     background-color: seagreen;
+    color: #EEEEEE;
 }

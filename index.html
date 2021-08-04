@@ -7,10 +7,11 @@
 body form{
     display: flex;
     flex-direction: column;
-    color: #EEEEEE;
-    background: hsla(0, 10%, 5%, 0.7);
+    color: #262626;
+    border: 2px solid #CCCCCC;
+    box-shadow: 4px 8px #CCCCCC;
+    background: hsla(0, 90%, 95%, 0.7);
     border-radius: 5px;
-    border: 3px solid #303030;
     margin: 3vh 10vw;
     text-align: start;
     align-content: center;
@@ -23,6 +24,9 @@ body form{
 </style>
 <html>
     <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -38,23 +42,26 @@ body form{
         <!-- #4: Puedo ver al menos tres elementos en los que se puede hacer click dentro del elemento nav, cada uno con la clase nav-link. -->
         <!-- #5: Cuando hago clic en un botón .nav-link en el elemento nav, soy llevado a la sección correspondiente de la página de aterrizaje. -->
         <nav id="nav-bar">
-            <a class="nav-link" href="#video">Video</a>
-            <a class="nav-link" href="#form">Form</a>
-            <a class="nav-link" href="#email">Email</a>
+            <a class="nav-link" href="#video"><h1>Video</h1></a>
+            <a class="nav-link" href="#form"><h1>Form</h1></a>
+            <a class="nav-link" href="#email"><h1>Email</h1></a>
         </nav>
     </header>
     <body>
         <div id="container-mision">
             <em id="mision">
-                El tenis, un deporte emocionante, lleno de clase y técnica. Potenciar el
-                juego es muestra de excelencia, potenciarlo al máximo es lo que ofrecemos
-                con cada uno de nuestros productos
+                <h2>
+                    El tenis, un deporte emocionante, lleno de clase y técnica. Potenciar el
+                    juego es muestra de excelencia, potenciarlo al máximo es lo que ofrecemos
+                    con cada uno de nuestros productos
+                </h2>
             </em>
             <!-- #6: Puedo ver un video de producto incrustado con id="video". -->
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/VjzvwyM4CQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div id="tennis-timeline">
                 <a href="https://twitter.com/intent/tweet?button_hashtag=tennis&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #tennis</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <a class="twitter-timeline" data-lang="es" data-height="500" data-theme="dark" href="https://twitter.com/Tennis?ref_src=twsrc%5Etfw">Tweets by Tennis</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-lang="es" data-height="500"
+                    data-theme="light" href="https://twitter.com/Tennis?ref_src=twsrc%5Etfw">Tweets by Tennis</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div
         </div>
         <div id="central-zone">
@@ -62,7 +69,8 @@ body form{
                 <img class="imgs-central" src="imgs/calidad.png" alt="Calidad de servicios"/>
                 <div>
                     <p><h2>Quality Assurance</h2>
-                    For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+                    For every purchase you make, we will ensure there are no damages or
+                    faults and we will check and test the pitch of your racket.
                     </p>
                 </div>
             </section>
@@ -70,13 +78,13 @@ body form{
                 <img class="imgs-central" src="imgs/deliver.png" alt="Delivery"/>
                 <div>
                     <p><h2>Fast Shipping</h2>
-We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+We make sure you recieve your tennis racket as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
                 </div>
             </section>
             <section class="central-section" id="garantia">
                 <img class="imgs-central" src="imgs/garantia.png" alt="garantía"/>
                 <div>
-                    <p><h2>Premium Materials</h2>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    <p><h2>Premium Materials</h2>Our tennis rackets have the best material which is sourced locally. This will increase the longevity of your purchase.</p>
                 </div>
             </section>
         </div>
@@ -89,18 +97,13 @@ We make sure you recieve your trombone as soon as we have finished making it. We
                 <div id="text">
                     <label id="name-label" for="nombre">Nombre:</label>
                     <input type="text" placeholder="Nombre" name="name" id="name" required/>
-                    <label id="number-label" for="numero">Edad:</label>
-                    <input type="number" placeholder="#" min="0" max="140" name="number" id="number" value="0"/>
                 </div>
                 <!-- Selección de datos en forma de cascada dorpdown -->
-                <div id="estudios">
-                    <label class="dropdown">Nivel de estudios</label>
-                    <select name="estudios" class="dropdown">
-                        <option value="Primaria">Primaria</option>
-                        <option value="Secundaria">Secundaria</option>
-                        <option value="Preparatoria">Preparatoria</option>
-                        <option value="Universidad">Universidad</option>
-                        <option value="Posgrado">Posgrado</option>
+                <div id="sexo">
+                    <label class="dropdown">Sexo</label>
+                    <select class="sexo" name="Sexo" class="dropdown">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
                     </select>
                 </div>
                 <div id="datos-adicionales">
@@ -112,7 +115,7 @@ We make sure you recieve your trombone as soon as we have finished making it. We
                         https://www.freecodecamp.com/email-submit). SEE FORM-->
 
                         <!-- area de texta comentarios -->
-                        <label class="comentarios" for="comentarios">Comentarios adicionales</label>
+                        <label for="comentarios">Comentarios adicionales</label>
                         <textarea class="comentarios" name="comentarios" placeholder="Comentarios"></textarea>
                         <input id="submit" type="submit"/>
                 </div>

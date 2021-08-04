@@ -9,13 +9,17 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
-#comentarios	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
-#datos-adicionales	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
-#estudios	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
+#datos-adicionales	styles.css	/^form #text, #sexo, #datos-adicionales{$/;"	i
+#sexo	styles.css	/^form #text, #sexo, #datos-adicionales{$/;"	i
+.comentarios	styles.css	/^form .sexo, .comentarios{$/;"	c
+El tenis, un deporte emocionante, lleno de clase y técnica. Potenciar el juego es muestra de excelencia, potenciarlo al máximo es lo que ofrecemos con cada uno de nuestros productos	index.html	/^                <\/h2>$/;"	i
+Email	index.html	/^            <a class="nav-link" href="#email"><h1>Email<\/h1><\/a>$/;"	h
 Fast Shipping	index.html	/^                    <p><h2>Fast Shipping<\/h2>$/;"	i
-Premium Materials	index.html	/^                    <p><h2>Premium Materials<\/h2>Our trombones use the shiniest brass which is /;"	i
+Form	index.html	/^            <a class="nav-link" href="#form"><h1>Form<\/h1><\/a>$/;"	h
+Premium Materials	index.html	/^                    <p><h2>Premium Materials<\/h2>Our tennis rackets have the best material whic/;"	i
 ProductLandingPage	README.md	/^# ProductLandingPage$/;"	c
 Quality Assurance	index.html	/^                    <p><h2>Quality Assurance<\/h2>$/;"	i
+Video	index.html	/^            <a class="nav-link" href="#video"><h1>Video<\/h1><\/a>$/;"	h
 body #central-zone	styles.css	/^body #central-zone{$/;"	i
 body #container-form	styles.css	/^body #container-form{$/;"	i
 body #container-mision	styles.css	/^body #container-mision{$/;"	i
@@ -32,16 +36,17 @@ container-mision	index.html	/^        <div id="container-mision">$/;"	I
 datos-adicionales	index.html	/^                <div id="datos-adicionales">$/;"	I
 delivery	index.html	/^            <section class="central-section" id="delivery">$/;"	I
 email	index.html	/^                    <input id="email" class="email" type="email" placeholder="username@domain" n/;"	I
-estudios	index.html	/^                <div id="estudios">$/;"	I
 form	index.html	/^            <form id="form" action="https:\/\/www.freecodecamp.com\/email-submit" method="get" a/;"	I
 form #submit	styles.css	/^form #submit{$/;"	i
-form #text	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
+form #text	styles.css	/^form #text, #sexo, #datos-adicionales{$/;"	i
+form .sexo	styles.css	/^form .sexo, .comentarios{$/;"	c
 form select	styles.css	/^form select{$/;"	s
 form textarea	styles.css	/^form textarea, input{$/;"	s
 garantia	index.html	/^            <section class="central-section" id="garantia">$/;"	I
 header	index.html	/^    <header id="header">$/;"	I
 header	styles.css	/^header{$/;"	s
 header #header-img	styles.css	/^header  #header-img{$/;"	i
+header #nav-bar	styles.css	/^header #nav-bar{$/;"	i
 header .nav-link	styles.css	/^header .nav-link{$/;"	c
 header .nav-link:hover	styles.css	/^header .nav-link:hover{$/;"	c
 header-img	index.html	/^            <img id="header-img" src="https:\/\/image.flaticon.com\/icons\/png\/512\/2357\/23573/;"	I
@@ -51,8 +56,7 @@ mision	index.html	/^            <em id="mision">$/;"	I
 name	index.html	/^                    <input type="text" placeholder="Nombre" name="name" id="name" required\/>$/;"	I
 name-label	index.html	/^                    <label id="name-label" for="nombre">Nombre:<\/label>$/;"	I
 nav-bar	index.html	/^        <nav id="nav-bar">$/;"	I
-number	index.html	/^                    <input type="number" placeholder="#" min="0" max="140" name="number" id="num/;"	I
-number-label	index.html	/^                    <label id="number-label" for="numero">Edad:<\/label>$/;"	I
+sexo	index.html	/^                <div id="sexo">$/;"	I
 submit	index.html	/^                        <input id="submit" type="submit"\/>$/;"	I
 tennis-timeline	index.html	/^            <div id="tennis-timeline">$/;"	I
 text	index.html	/^                <div id="text">$/;"	I
