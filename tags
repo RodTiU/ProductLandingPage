@@ -12,16 +12,25 @@
 #comentarios	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
 #datos-adicionales	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
 #estudios	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
+Fast Shipping	index.html	/^                    <p><h2>Fast Shipping<\/h2>$/;"	i
+Premium Materials	index.html	/^                    <p><h2>Premium Materials<\/h2>Our trombones use the shiniest brass which is /;"	i
 ProductLandingPage	README.md	/^# ProductLandingPage$/;"	c
+Quality Assurance	index.html	/^                    <p><h2>Quality Assurance<\/h2>$/;"	i
+body #central-zone	styles.css	/^body #central-zone{$/;"	i
 body #container-form	styles.css	/^body #container-form{$/;"	i
 body #container-mision	styles.css	/^body #container-mision{$/;"	i
 body #mision	styles.css	/^body #mision{$/;"	i
 body #tennis-timeline	styles.css	/^body #tennis-timeline{$/;"	i
 body #video	styles.css	/^body #video{$/;"	i
+body .central-section	styles.css	/^body .central-section{$/;"	c
+body .imgs-central	styles.css	/^body .imgs-central{$/;"	c
 body img	styles.css	/^body img{$/;"	s
+calidad	index.html	/^            <section class="central-section" id="calidad">$/;"	I
+central-zone	index.html	/^        <div id="central-zone">$/;"	I
 container-form	index.html	/^        <div id="container-form">$/;"	I
 container-mision	index.html	/^        <div id="container-mision">$/;"	I
 datos-adicionales	index.html	/^                <div id="datos-adicionales">$/;"	I
+delivery	index.html	/^            <section class="central-section" id="delivery">$/;"	I
 email	index.html	/^                    <input id="email" class="email" type="email" placeholder="username@domain" n/;"	I
 estudios	index.html	/^                <div id="estudios">$/;"	I
 form	index.html	/^            <form id="form" action="https:\/\/www.freecodecamp.com\/email-submit" method="get" a/;"	I
@@ -29,6 +38,7 @@ form #submit	styles.css	/^form #submit{$/;"	i
 form #text	styles.css	/^form #text, #estudios, #comentarios, #datos-adicionales{$/;"	i
 form select	styles.css	/^form select{$/;"	s
 form textarea	styles.css	/^form textarea, input{$/;"	s
+garantia	index.html	/^            <section class="central-section" id="garantia">$/;"	I
 header	index.html	/^    <header id="header">$/;"	I
 header	styles.css	/^header{$/;"	s
 header #header-img	styles.css	/^header  #header-img{$/;"	i
