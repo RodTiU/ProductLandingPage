@@ -1,102 +1,102 @@
 /* archivo de estilos */
-html{
-    background-color: #EEEEEE;
-    color: #262626;
-    font-family: 'Lato', sans-serif;
-    /* background-image: url(imgs/snowflake-pattern.png); */
-    /* background-size: 256px; */
+html {
+  background-color: #eeeeee;
+  color: #262626;
+  font-family: "Lato", sans-serif;
+  /* background-image: url(imgs/snowflake-pattern.png); */
+  /* background-size: 256px; */
 }
 /*  #13: La barra de navegación debe estar siempre en la parte superior del viewport.  */
-header{
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    background-color: #EEEEEE;
-    opacity: 1.0;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    margin: -10px;
+header {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  background-color: #eeeeee;
+  opacity: 1;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  margin: -10px;
 }
-header  #header-img{
-    height: 50px;
-    width: auto;
-    position: absolute;
-    left: 50px;
+header #header-img {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  left: 50px;
 }
-header #nav-bar{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 150px;
-    font-weight: bolder;
+header #nav-bar {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 150px;
+  font-weight: bolder;
 }
-header .nav-link{
-    color: #262626;
-    text-decoration: none;
-    padding: 0px 15px;
+header .nav-link {
+  color: #262626;
+  text-decoration: none;
+  padding: 0px 15px;
 }
-header .nav-link:hover{
-    background-color: #CCCCCC;
+header .nav-link:hover {
+  background-color: #cccccc;
 }
-body #container-mision{
-    margin-top: 30px;
-    display: grid;
-    grid-template-areas:
+body #container-mision {
+  margin-top: 30px;
+  display: grid;
+  grid-template-areas:
     "mision mision tennis-timeline"
     "video video tennis-timeline"
     ". central ."
     "form form form";
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-gap: 5vw;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 5vw;
 }
-body img{
-    margin-top: -20px;
+body img {
+  margin-top: -20px;
 }
-body #mision{
-    grid-area: mision;
-    text-align: center;
-    margin: 0vh 10vw;
+body #mision {
+  grid-area: mision;
+  text-align: center;
+  margin: 0vh 10vw;
 }
 /* @media (max-width: 600px){ */
 /*     body #mision{ */
 /*         margin: 0vh 4vw; */
 /*     } */
 /* } */
-body #video{
-    grid-area: video;
-    justify-self: center;
+body #video {
+  grid-area: video;
+  justify-self: center;
 }
-body #tennis-timeline{
-    grid-area: tennis-timeline;
+body #tennis-timeline {
+  grid-area: tennis-timeline;
 }
-body #central-zone{
-    grid-area: central;
-    display: flex;
-    flex-direction: column;
+body #central-zone {
+  grid-area: central;
+  display: flex;
+  flex-direction: column;
 }
-body .central-section{
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0vh;
-    align-content: center;
-    justify-content: center;
+body .central-section {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0vh;
+  align-content: center;
+  justify-content: center;
 }
-body .imgs-central{
-    filter: invert(20%);
-    height: 60px;
-    align-self: center;
-    margin: 20px;
+body .imgs-central {
+  filter: invert(20%);
+  height: 60px;
+  align-self: center;
+  margin: 20px;
 }
-body #container-form{
-    grid-area: form;
-    margin: 0vh 15vw;
+body #container-form {
+  grid-area: form;
+  margin: 0vh 15vw;
 }
 /* body form{ */
 /*     display: flex; */
@@ -107,31 +107,35 @@ body #container-form{
 /*     margin: 3vh 10vw; */
 /*     text-align: start; */
 /*     align-content: center; */
-/* } */ 
-form #text, #sexo, #datos-adicionales{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+/* } */
+form #text,
+#sexo,
+#datos-adicionales {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
-form .sexo, .comentarios{
-    border: 2px solid #CCCCCC;
+form .sexo,
+.comentarios {
+  border: 2px solid #cccccc;
 }
-form textarea, input{
-    border-radius: 5px;
-    margin-bottom: 10px;
-    height: 3.5vh;
-    background-color: hsla(0,20%,95%,0.5);
-    color: #262626;
+form textarea,
+input {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 3.5vh;
+  background-color: hsla(0, 20%, 95%, 0.5);
+  color: #262626;
 }
-form select{
-    background-color: hsla(0,20%,95%,0.5);
-    color: #262626;
-    /* border: 2px solid #262626; */
+form select {
+  background-color: hsla(0, 20%, 95%, 0.5);
+  color: #262626;
+  /* border: 2px solid #262626; */
 }
-form #submit{
-    height: 50px;
-    width: auto;
-    border: 2px solid green;
-    background-color: seagreen;
-    color: #EEEEEE;
+form #submit {
+  height: 50px;
+  width: auto;
+  border: 2px solid green;
+  background-color: seagreen;
+  color: #eeeeee;
 }
